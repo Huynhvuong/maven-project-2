@@ -24,7 +24,7 @@ stages{
         }
         stage ('Deploy to Production'){
             steps{
-                timeout(time:5, unit:'DAYS'){
+                timeout(time:1, unit:'MINUTES'){
                     input message:'Approve PRODUCTION Deployment?'
                 }
 
